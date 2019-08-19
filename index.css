@@ -1,6 +1,93 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 body {
     background-color: #60a3bc;
     color : white;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+span {
+    display: block;
+}
+li {
+    list-style: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn 0.5s linear;
+  }
+  
+.toDoList {
+    width: 30%;
+    margin: 0 auto;
+    padding: 0px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+  
+button {
+    outline: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+}
+.js-clock {
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: default;
+}
+  
+.greeting-title {
+    color: white;
+    font-size: 49px;
+}
+
+.greeting-input {
+    width: 430px;
+    height: 50px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+  }
+
+.toDoForm-title {
+    color: white;
+    font-size: 39px;
+    font-weight: 300px;
+  }
+  
+.toDoForm-input {
+    width: 570px;
+    height: 30px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+  }
+
+.greeting-input:focus,
+.toDoForm-input:focus {
+    outline: none;
+    cursor: text;
 }
 .form,
 .greetings {
@@ -8,7 +95,19 @@ body {
 }
 
 .showing{
-    display: block;
+color: white;
+    font-size: 39px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s linear;
+
 }
 
 @keyframes fadeIn{
@@ -29,3 +128,4 @@ body {
     z-index: -1; 
     animation: fadeIn 0.5s linear;
 }
+

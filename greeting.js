@@ -1,7 +1,8 @@
 // querySelector은 찾은 거의 첫번째만 가져옴 querySelectorAll은 전부다!!(arra y로)
 const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
-    greeting = document.querySelector(".js-greetings");
+    greeting = document.querySelector(".js-greetings"),
+    toDoFormShowing = document.querySelector(".js-toDoForm");;
 
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
@@ -23,6 +24,7 @@ function askForName(){
 function paintName(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
+    toDoFormShowing.classList.add(SHOWING_CN);
     greeting.innerText = `hello ${text}`
 }
 function loadName(){
