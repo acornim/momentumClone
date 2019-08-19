@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Something</title>
+  <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <title>Momentum Clone</title>
+  </head>
+  <link rel="stylesheet" href="index.css" />
+  <body>
     <header>
+        <div class="weather">
+            <i class="fas fa-thermometer-half"> </i>
             <span class="js-weather"></span>
-            
+        </div>
+        <div class="css-place">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="js-place"></div>
+      </div>
     </header>
     <main>
-    <div class="js-clock">
-        <h1>00:00</h1>
-    </div>
-    <form class="js-form form">
-        <span class="greeting-title">Hello! What's your name?</span>
-        <input class="greeting-input" type="text"/>
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm toDoForm">
-        <span class="toDoForm-title">What's your main focus for today?</span>
-        <input class="toDoForm-input" type="text"/>
-    </form>
-    <ul class="js-toDoList toDoList"></ul>
+      <div class="js-clock">
+        <span>00:00</span>
+      </div>
+      <form class="js-form form">
+        <span class="greeting-title">Hello, what's your name?</span>
+        <input class="greeting-input" type="text" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDoForm toDoForm">
+        <span class="toDoForm-title">What is your main focus for today?</span>
+        <input class="toDoForm-input" type="text" />
+      </form>
+      <ul class="js-toDoList toDoList"></ul>
+      <div class="bottom-text">
+        <span class="js-quotes"></span>
+      </div>
     </main>
+    <embed src="spring.mp3" hidden=true autoplay=true>
+  
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
-    <script src="weather.js "></script>
-</body>
+    <script src="weather.js"></script>
+    <script src="quote.js"></script>
+
+  </body>
 
 </html>

@@ -25,7 +25,7 @@ function paintName(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     toDoFormShowing.classList.add(SHOWING_CN);
-    greeting.innerText = `hello ${text}`
+    greeting.innerText = `How is it going? ${text}`
 }
 function loadName(){
     const currentUser = localStorage.getItem(USER_LS);
